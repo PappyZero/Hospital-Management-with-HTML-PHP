@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Quickie Text Color. */
+
+.text-white {
+    color: white;
+}
+
+.text-grey {
+    color: #E1E1E1;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-blue {
+    color: #005EF9;
+}
+
+.text-green
+{
+    color: #198754;
+}
+
+.text-deco {
+    text-decoration: none;
+}
+
+.text-deco a {
+    text-decoration: none;
+}
+
+
+/* Quickie Text Color ends here. */
+
+
+/* Quickie Background color. */
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: #005EF9;
+}
+
+.bg-grey {
+    background-color: #E1E1E1;
+}
+
+
+/* Quickie Background color ends here. */
+
+
+/* Quickie Height. */
+
+.height-50 {
+    height: 50px;
+}
+
+.height-100 {
+    height: 100px;
+}
+
+.height-150 {
+    height: 150px;
+}
+
+.height-200 {
+    height: 200px;
+}
+
+.height-250 {
+    height: 250px;
+}
+
+
+/* Quickie Height ends here. */
+
+
+
+.hms_sections
+{
+    border: #0ebcdfab solid 2px;
+    border-radius: 10px;
+    background-color: #005EF9;
+}
+
+.hms_sections img
+{
+    width: 100%;
+    height: 15rem;
+    object-fit: fill;
+}
+
+.nav_tabs a
+{
+    display: inline-block;
+    position: relative;
+    color: #058034;
+}
+
+.nav_tabs a::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav_tabs a:hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.dropdown_menu_list li a 
+{
+    color: grey;
+    text-decoration: none;
+}
+
+/* .nav_tabs li a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+} */
+
+.carousel_inner_img .carousel_item_img img
+{
+    height: 40rem;
+    object-fit: fill;
+}
+
+.brand_logo span
+{
+    color: #058034;
+    font-weight: 500;
+}
+
+.brand_logo img 
+{
+    object-fit: fill;
+}
+
+.social_icons a
+{
+    color: #198754;
+}
+
+.bg_image_best
+{
+    opacity: 0.8;
+    background-color: #ddccf0 !important;
+    margin-bottom: 10%;
+    margin-top:10%; 
+    margin-left:16%;
+    width:25% !important;
+}
+
+.bg_image_best h1
+{
+    font-weight: 700;
+}
+
+.bg_image_best p
+{
+    font-weight: 600;
+}
+
+.section_img1
+{
+    background-color: #ade9c4;
+}
+
+.bg_image_wood
+{
+    opacity: 0.8;
+    margin-bottom: 10%;
+    margin-top:10% !important; 
+    margin-left:16%;
+    width:25% !important;
+}
+
+.bg_image_wood h1
+{
+    font-weight: 700;
+}
+
+.bg_image_wood p
+{
+    font-weight: 600;
+}
