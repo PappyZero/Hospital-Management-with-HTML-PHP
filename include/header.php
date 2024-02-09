@@ -35,7 +35,6 @@
                     <span>veri.care</span>
                 </a>
 
-
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link active text-success" aria-current="page" href="#"><i class="fa-solid fa-map-location">  Location</i></a>
@@ -61,6 +60,7 @@
                                 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        
                         <li class="nav-item nav_tabs">
                             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>

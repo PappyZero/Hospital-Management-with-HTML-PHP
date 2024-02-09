@@ -1,3 +1,46 @@
+<?php
+    include_once("./include/connect_db.php");
+    
+    if (isset($_POST['login']))
+    {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $error = array();
+
+        if (empty($email))
+        {
+            $error['admin'] = "Enter your Email";
+        }
+
+        elseif(empty($password))
+        {
+            $error['admin'] = "Enter your password";
+        }
+
+        if (count($error) == 0)
+        {
+            $query = "SELECT * FROM admin WHERE email='$email' AND password='$password'";
+
+            $result = mysqli_query($conn, $query);
+
+            if (mysqli_num_rows($result) == 1)
+            {
+                echo "<script>alert('Admin Login Successful!')</script>";
+                $_SESSION['admin'] = $email;
+
+                header("Location:admin/index.php");
+                exit();
+             }
+
+            else
+            {
+                echo "<script>alert('Invalid Email or Password!')</script>";
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +56,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="./css/admin_login.css">
 
-    <title>Admin Login Page</title>
+    <title>ADMIN LOGIN</title>
     <style>
         .error-message {
             text-align: center;
@@ -42,14 +85,29 @@
 <body>
     <div class="container admin_container">
         <div class="signin">
-            <form action="" method="post">
-                <div class="col">
-                    <label for="email" class="form-label">EMAIL</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <h1>ADMIN LOGIN</h1>
+            <form method="post">
+                <div class="alert alert-danger">
+                    <?php
+                        if (isset($error['admin']))
+                        {
+                            $show = $error['admin'];
+                        }
+
+                        else
+                        {
+                            $show = "";
+                        }
+                        echo $show;
+                    ?>
                 </div>
                 <div class="col">
-                    <label for="password" class="form-label">PASSWORD</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <!-- <label for="email" class="form-label">EMAIL</label> -->
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                </div>
+                <div class="col">
+                    <!-- <label for="password" class="form-label">PASSWORD</label> -->
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password">
                 </div>
                 <!-- <button type="submit" class="btn btn-primary">LOGIN</button> -->
                 <input type="submit" value="LOGIN" name="login" />

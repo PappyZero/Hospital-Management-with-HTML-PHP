@@ -7,7 +7,7 @@
     <!--    CSS File  -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title> PAPPY HOSPITAL MANAGEMENT SYSTEM </title>
+    <title> VERI HOSPITAL MANAGEMENT SYSTEM </title>
 </head>
 <body>
 <?php

@@ -85,15 +85,15 @@ body {
 
 .admin_container {
     position: relative;
-    /* top: 40% !important;
-    left: 11% !important; */
+    top: 11% !important;
+    /* left: 11% !important; */
     /* transform: translate(-50%, -50%); */
-    width: 30rem !important;
+    width: 40rem !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
-@media screen and (max-width:768) {
+/* @media screen and (max-width:768) {
     .admin_container {
         width: 25rem !important;
     }
@@ -103,7 +103,7 @@ body {
     .admin_container {
         display: none !important;
     }
-}
+} */
 
 .admin_container h1 {
     font-size: 50px !important;
@@ -133,12 +133,12 @@ body {
 }
 
 .admin_container form input::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .admin_container form [type="submit"] {
-    background: #499164;
-    transition: all 500% ease;
+    background: #28dd6d;
+    transition: all 500% ease-in-out;
     cursor: pointer;
     border-radius: 40px;
 }
