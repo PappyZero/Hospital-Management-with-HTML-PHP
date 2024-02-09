@@ -1,4 +1,7 @@
 <?php
+
+    session_start();
+    
     include_once("./include/connect_db.php");
     
     if (isset($_POST['login']))
@@ -29,7 +32,7 @@
                 echo "<script>alert('Admin Login Successful!')</script>";
                 $_SESSION['admin'] = $email;
 
-                header("Location:admin/index.php");
+                header("refresh:1;url=admin/index.php");
                 exit();
              }
 
@@ -87,11 +90,12 @@
         <div class="signin">
             <h1>ADMIN LOGIN</h1>
             <form method="post">
-                <div class="alert alert-danger">
                     <?php
                         if (isset($error['admin']))
                         {
-                            $show = $error['admin'];
+                            $sh = $error['admin'];
+
+                            $show = "<h5 class='alert alert-danger'>$sh</h5>";
                         }
 
                         else
@@ -100,7 +104,6 @@
                         }
                         echo $show;
                     ?>
-                </div>
                 <div class="col">
                     <!-- <label for="email" class="form-label">EMAIL</label> -->
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">

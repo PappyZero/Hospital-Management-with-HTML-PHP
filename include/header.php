@@ -35,7 +35,7 @@
                     <span>veri.care</span>
                 </a>
 
-                <ul class="nav justify-content-center">
+                <ul class="nav d-grid gap-2 d-md-flex justify-content-md-end">
                     <li class="nav-item">
                         <a class="nav-link active text-success" aria-current="page" href="#"><i class="fa-solid fa-map-location">  Location</i></a>
                     </li>
@@ -46,11 +46,11 @@
                         <a class="nav-link text-success" href="#"><i class="fa-solid fa-phone-volume">  Phone</i></a>
                     </li>
                 </ul>
-
+<!-- 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button class="btn btn-outline-success me-md-2" type="button">Sign In</button>
                     <button class="btn btn-outline-success" type="button">Get Started</button>
-                </div>
+                </div> -->
             </div>
         </nav>
     </section>
@@ -60,47 +60,74 @@
                                 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        
-                        <li class="nav-item nav_tabs">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                        </li>
-                        <li class="nav-item nav_tabs">
-                            <a class="nav-link" href="admin_login.php">Admin</a>
-                        </li>
-                        <li class="nav-item nav_tabs dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctor</a>
-                            <ul class="dropdown-menu dropdown_menu_list">
-                                <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Action 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item nav_tabs dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Receptionist</a>
-                            <ul class="dropdown-menu dropdown_menu_list">
-                                <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Action 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item nav_tabs dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patient</a>
-                            <ul class="dropdown-menu dropdown_menu_list">
-                                <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Action 3</a></li>
-                            </ul>
-                        </li>
+                        <?php
+                            if (isset($_SESSION['admin']))
+                            {
+                                $user = $_SESSION['admin']; 
+                                echo '
+                                <div class="row g-3 align-items-center">
+
+                                    <div class="col-auto">
+                                        <li class="nav-item nav_tabs">
+                                        <a class="nav-link" href="#">'.$user.'</a>
+                                        </li>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <li class="nav-item nav_tabs">
+                                            <a class="nav-link" href="logout.php">LOGOUT</a>
+                                        </li>
+                                    </div>
+                                </div>
+                                ';
+                            }
+
+                            else
+                            {
+                                echo '
+                                <li class="nav-item nav_tabs">
+                                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                                </li>
+                                <li class="nav-item nav_tabs">
+                                    <a class="nav-link" href="admin_login.php">Admin</a>
+                                </li>
+                                <li class="nav-item nav_tabs dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctor</a>
+                                    <ul class="dropdown-menu dropdown_menu_list">
+                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav_tabs dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Receptionist</a>
+                                    <ul class="dropdown-menu dropdown_menu_list">
+                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav_tabs dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patient</a>
+                                    <ul class="dropdown-menu dropdown_menu_list">
+                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
+                                    </ul>
+                                </li>
+                                ';
+                            }
+                        ?>
                     </ul>
 
                     
-                    <div class="d-grid gap-5 d-md-flex justify-content-md-end social_icons">
+                    <div class="d-grid gap-5 d-md-flex justify-content-md-end social_icons nav_tabs ">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>

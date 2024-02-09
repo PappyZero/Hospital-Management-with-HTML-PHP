@@ -127,12 +127,6 @@ body {
     text-decoration: none;
 }
 
-/* .nav_tabs li a:hover
-{
-    color: #000000;
-    text-decoration: underline;
-} */
-
 .carousel_inner_img .carousel_item_img img
 {
     height: 40rem;
@@ -159,7 +153,6 @@ body {
 {
     color: #198754;
     background-color: white;
-    text-decoration: underline;
 }
 
 .bg_image_best

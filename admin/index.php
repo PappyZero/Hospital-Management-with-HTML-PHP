@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,7 @@
     <title>ADMIN</title>
 
 </head>
-<body>
+<body>  
 <?php
         include("../include/header.php");
     ?>
