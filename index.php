@@ -27,7 +27,7 @@ include_once("./include/header.php");
             <div class="card text-dark carousel-item carousel_item_img active" data-bs-interval="3000">
                 <img src="./images/med-recep.jpg" class="card-img" alt="...">
 
-                <div class="card-img-overlay bg_image_best img-thumbnail rounded">
+                <div class="card-img-overlay bg_image_best img-fluid img-thumbnail rounded">
                     <h1 class="card-title">Best Choice For <br> Medical Health Care</h1>
                     <p class="card-text">We learn about the most ideal option or healthcare <br> provider to ensure optimal outcomes, taking into <br> consideration factors such as quality of care, patient <br> preferences, and the effectiveness of medical practices.</p>
                 </div>
@@ -94,22 +94,28 @@ include_once("./include/header.php");
                 <div class="col-md-1">
                     <img src="./images/wood.png" alt="">
                 </div>
-                <div class="col-md-2 bg_image_wood img-thumbnail rounded">
-                    <h1 class="card-title">Best Choice For <br> Medical Health Care</h1>
-                    <p class="card-text">We learn about the most ideal option or healthcare <br> provider to ensure optimal outcomes, taking into <br> consideration factors such as quality of care, patient <br> preferences, and the effectiveness of medical practices.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                <div class="col-md-2 bg_image_wood">
+                    <h1 class="card-title">Provide Best Quality <br> Healthcare For You</h1>
+                    <p class="card-text">
+                    <ul>
+                        <li>Affordable monthly premium packages</li>
+                        <li>Choose your favourite services</li>
+                        <li>Only use friendly environment</li>
+                    </ul>
+                    </p>
                 </div>
-                <div class="col-md-8">
-                    <img src="./images/patient2.png" class="img-fluid" alt="...">
+                <div class="col ipad_display">
+                    <img src="./images/ipad_view_2.png" class="img-fluid" alt="...">
                 </div>
+            </div>
+            <div class="row g-0">
+                <img src="./images/Specialized_Training.png" class="img-fluid" alt="...">
             </div>
         </div>
     </section>
     <div class="container-fluid text-center">
                 <div class="card mb-3" style="width: 100%;">
-                    <div class="row g-0">
-                        <img src="./images/Specialized_Training.png" class="img-fluid" alt="...">
-                    </div>
+
                 </div>  
         </div>
     

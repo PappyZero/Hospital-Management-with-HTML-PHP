@@ -3,14 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Brand Icon -->
+    <!-- <link rel="shortcut icon" href="./image/wms_logo.jpeg" type="image/x-icon" /> -->
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/admin_login.css">
+
     <title>Admin Login Page</title>
-</head>
-<body>
+    <style>
+        .error-message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .alert-danger {
+            background-color: #ffcccb;
+            color: #ff0000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .alert-success {
+            background-color: #caffbf;
+            color: #000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+
     <?php
         include_once("./include/header.php");
     ?>
-    
-    <div class="container">
+</head>
+<body>
+    <div class="container admin_container">
+        <div class="signin">
+            <form action="" method="post">
+                <div class="col">
+                    <label for="email" class="form-label">EMAIL</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="col">
+                    <label for="password" class="form-label">PASSWORD</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">LOGIN</button> -->
+                <input type="submit" value="LOGIN" name="login" />
+
+            </form>    
+        </div>
+    </div>
+
+           
+
+    <!-- <div class="container">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-3"></div>
@@ -35,6 +85,49 @@
                 <div class="col-md-3"></div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <!-- <div class="container admin_container align-items-center">
+        <div class="signin">
+            <h1>ADMIN LOGIN</h1>
+            <div class="error-message">
+                <?php
+                    if (!empty($error_message_1)) {
+                        echo "<div class='alert alert-danger'>$error_message_1</div>";
+                    }
+                    if (!empty($error_message_2)) {
+                        echo "<div class='alert alert-danger'>$error_message_2</div>";
+                    }
+                    if (!empty($success_message)) {
+                        echo "<div class='alert alert-success'>$success_message</div>";
+                    }
+                ?>
+            </div> -->
+
+            <!-- <?php 
+                // if(isset($_SESSION['status']))
+                // {
+                //     ?>
+                //     <div class="alert alert-success">
+                //         <h5><?= $_SESSION['status']; ?></h5>
+                //     </div>
+                //     <?php
+                //     unset($_SESSION['status']);
+                // }
+            ?> -->
+
+            <!-- <form action="./admin_login_connect.php" method="post">
+                <input type="email" placeholder="EMAIL" class="form-control" id="login_email" name="login_email" required />
+                <input type="password" placeholder="PASSWORD" class="form-control" id="login_password" name="login_password" required />
+                <br>
+                <a href="#">Forgot password? </a>
+                <input type="submit" value="LOGIN" name="login" />
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </form>
+        </div>
+    </div> -->
+
 </body>
 </html>
+
+

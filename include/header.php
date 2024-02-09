@@ -27,11 +27,12 @@
     <title>HEADER</title>
 </head>
 <body>        
+    <section class="bg-white">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand brand_logo" href="#">
                     <img src="./images/logo/7_removebg.png" alt="Logo" width="100" height="90" class="d-inline-block" >
-                    <span>pappy.care</span>
+                    <span>veri.care</span>
                 </a>
 
 
@@ -53,6 +54,7 @@
                 </div>
             </div>
         </nav>
+    </section>
 
         <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
             <div class="container">
