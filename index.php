@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <title> VERI HOSPITAL MANAGEMENT SYSTEM </title>
+    <?php
+        include_once("./header.php");
+    ?>
 </head>
 <body>
-<?php
-include_once("./include/header.php");
-?>
+
     <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

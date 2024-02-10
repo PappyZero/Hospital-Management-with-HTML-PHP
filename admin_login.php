@@ -82,7 +82,7 @@
     </style>
 
     <?php
-        include_once("./include/header.php");
+        include_once("./header.php");
     ?>
 </head>
 <body>

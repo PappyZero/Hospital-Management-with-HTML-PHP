@@ -7,8 +7,7 @@ body {
 }
 
 
-/* Quickie Text Color. */
-
+/* Quickie Text Color Starts Here. */
 .text-white {
     color: white;
 }
@@ -37,13 +36,10 @@ body {
 .text-deco a {
     text-decoration: none;
 }
+/* Quickie Text Color Ends Here. */
 
 
-/* Quickie Text Color ends here. */
-
-
-/* Quickie Background color. */
-
+/* Quickie Background Colors Starts Here. */
 .bg-white {
     background-color: white;
 }
@@ -63,13 +59,10 @@ body {
 .bg-grey {
     background-color: #E1E1E1;
 }
+/* Quickie Background Colors Ends Here. */
 
 
-/* Quickie Background color ends here. */
-
-
-/* Quickie Height. */
-
+/* Quickie Height Starts Here*/
 .height-50 {
     height: 50px;
 }
@@ -89,11 +82,11 @@ body {
 .height-250 {
     height: 250px;
 }
+/* Quickie Height Ends Here. */
 
 
-/* Quickie Height ends here. */
 
-
+/* Styling For Both Nav Starts Here */
 .nav_tabs a
 {
     display: inline-block;
@@ -154,7 +147,11 @@ body {
     color: #198754;
     background-color: white;
 }
+/* Styling For Both Nav Ends Here */
 
+
+
+/* Carousel Image Overlay Styling Starts Here */
 .bg_image_best
 {
     opacity: 0.8;
@@ -174,7 +171,11 @@ body {
 {
     font-weight: 600;
 }
+/* Carousel Image Overlay Styling Ends Here */
 
+
+
+/* Section Of the iPad Styling Starts Here */
 .section_img1
 {
     background-color: #c5e4d1 !important;
@@ -204,3 +205,67 @@ body {
     width: 100% !important;
     height: auto !important;
 }
+/* Section Of the iPad Styling Ends Here */
+
+
+
+/* Side Bar Styling Starts Here */
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #e2ece2;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #aedaac;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  /* Side Bar Styling Ends Here */
