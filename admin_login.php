@@ -95,7 +95,7 @@
                         {
                             $sh = $error['admin'];
 
-                            $show = "<h5 class='alert alert-danger'>$sh</h5>";
+                            $show = "<h5 class='text-center alert alert-danger'>$sh</h5>";
                         }
 
                         else

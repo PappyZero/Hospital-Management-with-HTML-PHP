@@ -84,9 +84,26 @@ body {
 }
 /* Quickie Height Ends Here. */
 
-
+/* 768px */
 
 /* Styling For Both Nav Starts Here */
+
+/* Brand logo stlying */
+.brand_logo span
+{
+    color: #058034;
+    font-weight: 500;
+}
+
+.brand_logo img 
+{
+    object-fit: fill;
+}
+
+/* About Us Contact Icons Styling */
+
+
+/* Second Nav Styling */
 .nav_tabs a
 {
     display: inline-block;
@@ -126,16 +143,7 @@ body {
     object-fit: fill;
 }
 
-.brand_logo span
-{
-    color: #058034;
-    font-weight: 500;
-}
 
-.brand_logo img 
-{
-    object-fit: fill;
-}
 
 .social_icons a
 {
@@ -147,7 +155,19 @@ body {
     color: #198754;
     background-color: white;
 }
+
+@media screen and (max-width: 768px) 
+{
+    .social_icons a
+    {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    }
+}
+
 /* Styling For Both Nav Ends Here */
+/* 1000px  768px  */
 
 
 
@@ -216,7 +236,7 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #e2ece2;
+    background-color: rgba(238, 237, 237, 0.534);
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -232,7 +252,7 @@ body {
   
   /* Active/current link */
   .sidebar a.active {
-    background-color: #04AA6D;
+    background-color: #088155;
     color: white;
   }
   
@@ -268,4 +288,25 @@ body {
     }
   }
 
-  /* Side Bar Styling Ends Here */
+/* Side Bar Styling Ends Here */
+
+/* Admin Styling Panel Starts Here */
+.admin_box
+{
+    height: 130px; 
+    width: 100%;
+}
+
+.admin_dash_icons a 
+{
+    color: white !important;
+    font-size: 50px !important;
+
+}
+
+.admin_dash_icons a:hover
+{
+    font-size: 52px !important;
+    opacity: 0.8;
+}
+/* Admin Styling Panel Ends Here */

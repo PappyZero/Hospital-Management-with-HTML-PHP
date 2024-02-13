@@ -25,24 +25,24 @@
         </div>
 
         <div class="carousel-inner carousel_inner_img">
-            <div class="card text-dark carousel-item carousel_item_img active" data-bs-interval="3000">
+            <div class="card text-dark carousel-item carousel_item_img active" data-bs-interval="2000">
                 <img src="./images/med-recep.jpg" class="card-img" alt="...">
 
-                <div class="card-img-overlay bg_image_best img-fluid img-thumbnail rounded">
+                <div class="card-img-overlay overflow-hidden bg_image_best img-fluid img-thumbnail rounded">
                     <h1 class="card-title">Best Choice For <br> Medical Health Care</h1>
                     <p class="card-text">We learn about the most ideal option or healthcare <br> provider to ensure optimal outcomes, taking into <br> consideration factors such as quality of care, patient <br> preferences, and the effectiveness of medical practices.</p>
                 </div>
             </div>
 
-            <div class="carousel-item carousel_item_img" data-bs-interval="3000">
-                <img src="./images/admin1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item carousel_item_img" data-bs-interval="2000">
+                <img src="./images/admin/admin1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>ADMINISTRATION</h5>
                     <p>Administer your website with ease and precision.</p>
                 </div>
             </div>
 
-            <div class="carousel-item carousel_item_img" data-bs-interval="3000">
+            <div class="carousel-item carousel_item_img" data-bs-interval="2000">
                 <img src="images/patient3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>DOCTOR</h5>
@@ -50,23 +50,23 @@
                 </div>
             </div>
 
-            <div class="carousel-item carousel_item_img" data-bs-interval="3000">
+            <div class="carousel-item carousel_item_img" data-bs-interval="2000">
                 <img src="./images/Medical-Receptionist.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block text-white">
                     <h5>MEDICAL ADMINISTRATION</h5>
                     <p>Elevate patient experience with Medical Reception.</p>
                 </div>
             </div>
 
-            <div class="carousel-item carousel_item_img" data-bs-interval="3000">
+            <div class="carousel-item carousel_item_img" data-bs-interval="2000">
                 <img src="./images/nurse4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block text-white">
                     <h5>NURSE STATION</h5>
                     <p>Delivering care with compassion, one click away.</p>
                 </div>
             </div>
 
-            <div class="carousel-item carousel_item_img" data-bs-interval="3000">
+            <div class="carousel-item carousel_item_img" data-bs-interval="2000">
                 <img src="./images/patient6.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>PATIENT</h5>
