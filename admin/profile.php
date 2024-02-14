@@ -63,7 +63,7 @@
                             ?>
                             <form method="POST" enctype="multipart/form-data">
                                 <?php
-                                    echo "<img src='../images/admin/$profiles' class='col-md-12 img-thumbnail' style='height: 400px;'>";
+                                    echo "<img src='../images/admin/$profiles' class='col-md-12 img-thumbnail' style='height: 400px; border-radius: 100%;'>";
                                 ?>
                                  
                                 <div class="form-group">

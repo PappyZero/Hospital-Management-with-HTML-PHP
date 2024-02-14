@@ -55,12 +55,17 @@
                             <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-8 align-items-center">
-                                            <h5 class="my-3 text-white">0</h5>
+                                            <?php
+                                                $doctor = mysqli_query($conn, "SELECT * FROM doctors WHERE status='Approved'");
+
+                                                $num2 = mysqli_num_rows($doctor);
+                                            ?>
+                                            <h5 class="my-3 text-white"><?php echo $num2; ?></h5>
                                             <h5 class="text-white">Total</h5>
                                             <h5 class="text-white">Doctors</h5>
                                         </div>
                                         <div class="col-md-4 my-4 admin_dash_icons">
-                                            <a href="#"><i class="fa-solid fa-user-doctor"></i></a>
+                                            <a href="./doctor.php"><i class="fa-solid fa-user-doctor"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -100,12 +105,18 @@
                             <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-8 align-items-center">
-                                            <h5 class="my-3 text-white">0</h5>
+                                            <?php
+                                                $job = mysqli_query($conn, "SELECT * FROM doctors WHERE status='Pending'");
+
+                                                $num1 = mysqli_num_rows($job);
+
+                                            ?>
+                                            <h5 class="my-3 text-white"><?php echo $num1; ?></h5>
                                             <h5 class="text-white">Total</h5>
                                             <h5 class="text-white">Job Requests</h5>
                                         </div>
                                         <div class="col-md-4 my-4 admin_dash_icons">
-                                            <a href="#"><i class="fa-solid fa-book-open"></i></a>
+                                            <a href="./job_request.php"><i class="fa-solid fa-book-open"></i></a>
                                         </div>
                                     </div>
                                 </div>

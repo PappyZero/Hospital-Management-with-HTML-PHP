@@ -15,7 +15,7 @@
             <hr class="dropdown-divider">
             <a class="nav-link list-group-item list-group-item-action text-center" href="./admin.php">ADMINISTRATORS</a>
             <hr class="dropdown-divider">
-            <a class="nav-link list-group-item list-group-item-action text-center" href="#">DOCTORS</a>
+            <a class="nav-link list-group-item list-group-item-action text-center" href="./doctor.php">DOCTORS</a>
             <hr class="dropdown-divider">
             <a class="nav-link list-group-item list-group-item-action text-center" href="#">PATIENTS</a>
         </div>

@@ -102,7 +102,7 @@
 
                                     <div class="col-auto">
                                         <li class="nav-item nav_tabs">
-                                            <a class="nav-link" href="logout.php">LOGOUT  <i class="fa-solid fa-right-from-bracket"></i></a>
+                                            <a class="nav-link" href="./admin/logout.php">LOGOUT  <i class="fa-solid fa-right-from-bracket"></i></a>
                                         </li>
                                     </div>
                                 </div>
