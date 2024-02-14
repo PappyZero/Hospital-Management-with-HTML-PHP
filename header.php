@@ -88,6 +88,28 @@
                                 ';
                             }
 
+                            elseif (isset($_SESSION['doctor']))
+                            {
+                                $user = $_SESSION['doctor']; 
+                                echo '
+                                <div class="row g-3 align-items-center">
+
+                                    <div class="col-auto">
+                                        <li class="nav-item nav_tabs">
+                                        <a class="nav-link" href="#">'.$user.'</a>
+                                        </li>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <li class="nav-item nav_tabs">
+                                            <a class="nav-link" href="logout.php">LOGOUT  <i class="fa-solid fa-right-from-bracket"></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                                ';
+
+                            }
+
                             else
                             {
                                 echo '

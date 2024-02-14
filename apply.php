@@ -145,13 +145,13 @@
             <div><?php echo $show; ?></div>
             <form method="POST">
                 <h5>OR ENTER YOUR DETAILS</h5>
-                <input type="text" placeholder="FIRST NAME" class="form-control" id="firstName" name="firstName" autocomplete="off" />
-                <input type="text" placeholder="LAST NAME" class="form-control" id="lastName" name="lastName" autocomplete="off" />
-                <input type="text" placeholder="USER NAME" class="form-control" id="userName" name="userName" autocomplete="off" />
-                <input type="email" placeholder="EMAIL" class="form-control" id="email" name="email" autocomplete="off" />
+                <input type="text" placeholder="FIRST NAME" class="form-control" id="firstName" name="firstName" autocomplete="off"/>
+                <input type="text" placeholder="LAST NAME" class="form-control" id="lastName" name="lastName" autocomplete="off"/>
+                <input type="text" placeholder="USER NAME" class="form-control" id="userName" name="userName" autocomplete="off"/>
+                <input type="email" placeholder="EMAIL" class="form-control" id="email" name="email" autocomplete="off"/>
                 <input type="password" placeholder="PASSWORD" class="form-control" id="password" name="password" autocomplete="off" />
                 <input type="password" placeholder="CONFIRM PASSWORD" class="form-control" id="con_password" name="con_password" autocomplete="off" />
-                <input type="number" placeholder="PHONE NUMBER" class="form-control" id="num" name="num" autocomplete="off" />
+                <input type="number" placeholder="PHONE NUMBER" class="form-control" id="num" name="num" autocomplete="off"/>
                 <br>
                 <!-- <label for="gender" class="text-black">Gender:</label> -->
                 <select id="gender" name="gender" class="form-control">
