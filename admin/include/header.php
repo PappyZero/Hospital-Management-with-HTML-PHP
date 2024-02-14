@@ -7,6 +7,9 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Brand Icon -->
+    <!-- <link rel="shortcut icon" href="./image/wms_logo.jpeg" type="image/x-icon" /> -->
+
     <!-- Stackpath CSS -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
@@ -78,7 +81,7 @@
 
                                     <div class="col-auto">
                                         <li class="nav-item nav_tabs">
-                                            <a class="nav-link" href="logout.php">LOGOUT</a>
+                                            <a class="nav-link" href="logout.php">LOGOUT  <i class="fa-solid fa-right-from-bracket"></i></a>
                                         </li>
                                     </div>
                                 </div>
@@ -95,34 +98,13 @@
                                     <a class="nav-link" href="admin_login.php">Admin</a>
                                 </li>
                                 <li class="nav-item nav_tabs dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctor</a>
-                                    <ul class="dropdown-menu dropdown_menu_list">
-                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="doctor_login.php">Doctor</a>
                                 </li>
                                 <li class="nav-item nav_tabs dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Receptionist</a>
-                                    <ul class="dropdown-menu dropdown_menu_list">
-                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="#">Receptionist</a>
                                 </li>
                                 <li class="nav-item nav_tabs dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patient</a>
-                                    <ul class="dropdown-menu dropdown_menu_list">
-                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="#">Patient</a>
                                 </li>
                                 ';
                             }

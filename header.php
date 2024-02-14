@@ -7,12 +7,18 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Brand Icon -->
+    <!-- <link rel="shortcut icon" href="./image/wms_logo.jpeg" type="image/x-icon" /> -->
+
     <!-- Stackpath CSS -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <!-- Online Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <!-- Local Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="../css/bootstrap-css/bootstrap.css"> -->
 
@@ -35,7 +41,7 @@
                     <span>veri.care</span>
                 </a>
 
-                <ul class="nav d-grid gap-2 d-md-flex justify-content-md-end">
+                <ul class="nav d-grid gap-2 d-md-flex justify-content-md-end contact_icons">
                     <li class="nav-item">
                         <a class="nav-link active text-success" aria-current="page" href="#"><i class="fa-solid fa-map-location">  Location</i></a>
                     </li>
@@ -75,7 +81,7 @@
 
                                     <div class="col-auto">
                                         <li class="nav-item nav_tabs">
-                                            <a class="nav-link" href="logout.php">LOGOUT</a>
+                                            <a class="nav-link" href="logout.php">LOGOUT  <i class="fa-solid fa-right-from-bracket"></i></a>
                                         </li>
                                     </div>
                                 </div>
@@ -92,34 +98,13 @@
                                     <a class="nav-link" href="admin_login.php">Admin</a>
                                 </li>
                                 <li class="nav-item nav_tabs dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctor</a>
-                                    <ul class="dropdown-menu dropdown_menu_list">
-                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="doctor_login.php">Doctor</a>
                                 </li>
                                 <li class="nav-item nav_tabs dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Receptionist</a>
-                                    <ul class="dropdown-menu dropdown_menu_list">
-                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="#">Receptionist</a>
                                 </li>
                                 <li class="nav-item nav_tabs dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patient</a>
-                                    <ul class="dropdown-menu dropdown_menu_list">
-                                        <li><a href="#" class="dropdown-item">Action 1</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 2</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a href="#" class="dropdown-item">Action 3</a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="#">Patient</a>
                                 </li>
                                 ';
                             }

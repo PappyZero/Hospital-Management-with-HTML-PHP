@@ -1,0 +1,216 @@
+/* Quickie Text Color. */
+
+.text-white {
+    color: white;
+}
+
+.text-grey {
+    color: #E1E1E1;
+}
+
+.text-pink {
+    color: rgba(236, 156, 156, 0.89);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-blue {
+    color: #005EF9;
+}
+
+.text-deco {
+    text-decoration: none;
+}
+
+.text-deco a {
+    text-decoration: none;
+}
+
+
+/* Quickie Text Color ends here. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/phc_3d_3.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: larger;
+}
+
+
+/* Top Nav and the logo/brand image. */
+
+.top_nav_bar {
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0;
+}
+
+.top_nav img {
+    width: 150px;
+    margin: 0;
+    justify-content: center;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    animation: animate_Bg 5s linear infinite;
+}
+
+@keyframes animate_Bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+/* Top Nav and the logo/brand image ends here. */
+
+
+/* apply_container class of the form starts here */
+
+.apply_container 
+{
+    position: relative;
+    top: 6% !important;
+    /* left: 11% !important; */
+    /* transform: translate(-50%, -50%); */
+    width: 40rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.apply_container h1 
+{
+    font-size: 22px !important;
+    text-align: center;
+    margin-bottom: 2rem !important;
+    color: #058034;
+    font-weight: bold;
+}
+
+.apply_container form a 
+{
+    color: white;
+    margin-top: 3px !important;
+}
+
+.apply_container form h5 
+{
+    font-size: 20px !important;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #058034;
+    font-weight: bold;
+}
+
+.apply_container form input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.apply_container form input::placeholder {
+    color: black;
+}
+
+.apply_container form input[type="submit"] {
+    background: #28dd6d;
+    transition: all 500% ease-in-out;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.apply_container form input[type="submit"]:hover {
+    background-color: #058034;
+}
+
+.apply_container form small {
+    display: block;
+    margin-top: 1rem;
+    opacity: 0.7;
+    color: black !important;
+    font-size: 20px;
+}
+
+.apply_container form small a {
+    color: #058034;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.apply_container form small a:hover {
+    text-decoration: underline;
+}
+
+
+/* apply_container class of the form ends here */
+
+
+/* Signup class starts here */
+
+.signup {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(48, 30, 30, 0.1);
+    border: 2px solid rgba(3, 53, 73, 0.5);
+    padding: 5rem 2rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(5px);
+    animation: pappy 1s ease-in-out forwards;
+}
+
+
+/* Signup class ends here */
+
+
+/* Social class starts here */
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social a {
+    border: 5px solid rgba(225, 225, 225, 0.5);
+    width: 3rem;
+    height: 3rem;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 500ms ease-in-out;
+}
+
+.social a:hover {
+    background: black;
+    color: white;
+}
+
+
+/* Social class ends here */

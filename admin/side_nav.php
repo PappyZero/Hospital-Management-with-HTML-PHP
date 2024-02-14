@@ -11,6 +11,8 @@
         <div class="list-group sidebar">
             <a class="nav-link active list-group-item list-group-item-action text-center" aria-current="page" href="./index.php">DASHBOARD</a>
             <hr class="dropdown-divider">
+            <a class="nav-link list-group-item list-group-item-action text-center" href="./profile.php">ADMIN PROFILE</a>
+            <hr class="dropdown-divider">
             <a class="nav-link list-group-item list-group-item-action text-center" href="./admin.php">ADMINISTRATORS</a>
             <hr class="dropdown-divider">
             <a class="nav-link list-group-item list-group-item-action text-center" href="#">DOCTORS</a>

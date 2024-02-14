@@ -143,7 +143,16 @@ body {
     object-fit: fill;
 }
 
+/* .contact_icons li a
+{
+    font-size: 14px;
+} */
 
+.contact_icons li a:hover
+{
+    /* font-size: 15px; */
+    color: #000000;
+}
 
 .social_icons a
 {
@@ -152,7 +161,7 @@ body {
 
 .social_icons a:hover
 {
-    color: #198754;
+    color: black;
     background-color: white;
 }
 
