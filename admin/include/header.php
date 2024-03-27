@@ -112,7 +112,7 @@
                     </ul>
 
                     
-                    <div class="d-grid gap-5 d-md-flex justify-content-md-end social_icons nav_tabs ">
+                    <div class="d-flex gap-5 d-md-flex justify-content-md-end social_icons nav_tabs ">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
