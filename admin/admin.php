@@ -28,14 +28,17 @@
                             <h5 class="text-center">ALL ADMINISTRATORS</h5>
                             <?php
                                 $ad = $_SESSION['admin'];
-                                $query = "SELECT * FROM admin WHERE email !='$ad'";
+                                $query = "SELECT * FROM admin WHERE email ='$ad' || email !='$ad' ";
                                 $res = mysqli_query($conn, $query);
 
                                 $output = "
                                 <table class='table table-bordered'>
                                     <tr>
                                         <th>ID</th>
+                                        <th>LAST NAME</th>
+                                        <th>FIRST NAME</th>
                                         <th>EMAIL</th>
+                                        <th>USER NAME</th>
                                         <th style='width: 10%;'>ACTIONS</th>
                                     </tr>
                                 ";
@@ -53,12 +56,18 @@
                                 while ($row = mysqli_fetch_array($res))
                                 {
                                     $id = $row['admin_id'];
+                                    $last_name = $row['last_name'];
+                                    $first_name = $row['first_name'];
                                     $email = $row['email'];
+                                    $username = $row['username'];
 
                                     $output .= "
                                     <tr>
                                     <td>$id</td>
+                                    <td>$last_name</td>
+                                    <td>$first_name</td>
                                     <td>$email</td>
+                                    <td>$username</td>
                                     <td>
                                         <a href='admin.php?id=$id'>
                                             <button id='$id' class='btn btn-outline-danger remove'>Remove</button>
@@ -96,15 +105,33 @@
                             <?php
                                 if (isset($_POST['add_admin']))
                                 {
+                                    $admin_last_name = $_POST['add_admin_last_name'];
+                                    $admin_first_name = $_POST['add_admin_first_name'];                                    
                                     $admin_email = $_POST['add_admin_email'];
+                                    $admin_user_name = $_POST['add_admin_user_name'];
                                     $admin_pword = $_POST['add_admin_pword'];
                                     $admin_img = $_FILES['add_admin_img']['name'];
 
                                     $error = array();
 
-                                    if (empty($admin_email))
+                                    if (empty($admin_last_name))
+                                    {
+                                        $error['u'] = "Enter The Admin Last Name";
+                                    }
+
+                                    elseif (empty($admin_first_name))
+                                    {
+                                        $error['u'] = "Enter The Admin First Name";
+                                    }
+
+                                    elseif (empty($admin_email))
                                     {
                                         $error['u'] = "Enter The Admin Email";
+                                    }
+
+                                    elseif (empty($admin_user_name))
+                                    {
+                                        $error['u'] = "Enter The Admin User Name";
                                     }
 
                                     elseif (empty($admin_pword))
@@ -133,8 +160,8 @@
 
                                         else
                                         {
-                                            $q = "INSERT INTO admin(email, password, profile) 
-                                            VALUES('$admin_email', '$admin_pword', '$admin_img')";
+                                            $q = "INSERT INTO admin(last_name, first_name, email, username, password, profile) 
+                                            VALUES('$admin_last_name', '$admin_first_name', '$admin_email', '$admin_user_name', '$admin_pword', '$admin_img')";
         
                                             $result = mysqli_query($conn, $q);
         
@@ -174,9 +201,22 @@
                                     ?>
                                 </div>
                                 <div class="from-group mb-3">
+                                    <label for="add_admin_last_name">LAST NAME</label>
+                                    <input type="text" name="add_admin_last_name" class="form-control" autocomplete="off">
+                                    <br>
+
+                                    <label for="add_admin_first_name">FIRST NAME</label>
+                                    <input type="text" name="add_admin_first_name" class="form-control" autocomplete="off">
+                                    <br>   
+                                    
                                     <label for="add_admin_email">EMAIL</label>
                                     <input type="email" name="add_admin_email" class="form-control" autocomplete="off">
-                                    <br>
+                                    <br>  
+                                    
+                                    <label for="add_admin_user_name">USER NAME</label>
+                                    <input type="text" name="add_admin_user_name" class="form-control" autocomplete="off">
+                                    <br>                               
+
                                     <label for="add_admin_pword">PASSWORD</label>
                                     <input type="password" name="add_admin_pword" class="form-control">
                                 </div>

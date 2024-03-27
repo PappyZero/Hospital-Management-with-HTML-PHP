@@ -34,14 +34,50 @@
 
                 header("refresh:1;url=admin/index.php");
                 exit();
-             }
+            }
 
             else
             {
                 echo "<script>alert('Invalid Email or Password!')</script>";
+                // header("refresh:1;url=admin_login.php");
+                // exit();
+
             }
         }
     }
+
+
+    // if (isset($_POST['submit_login'])) 
+    // {
+    //     $login = $_POST['login']; // This will hold either the email or username
+    //     $password = $_POST['password'];
+    
+    //     $error = array();
+    
+    //     if (empty($login)) {
+    //         $error['admin'] = "Enter your Email or Username";
+    //     } elseif (empty($password)) {
+    //         $error['admin'] = "Enter your password";
+    //     }
+    
+    //     if (count($error) == 0) {
+    //         // Check if login is an email or username
+    //         $query = "SELECT * FROM admin WHERE (email='$login' OR username='$login') AND password='$password'";
+            
+    //         $result = mysqli_query($conn, $query);
+    
+    //         if (mysqli_num_rows($result) == 1) {
+    //             echo "<script>alert('Admin Login Successful!')</script>";
+    //             $_SESSION['admin'] = $login;
+    
+    //             header("refresh:1;url=admin/index.php");
+    //             exit();
+    //         } else {
+    //             echo "<script>alert('Invalid Email or Password!')</script>";
+    //         }
+    //     }
+    // }
+    
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +120,7 @@
                     ?>
                 <div class="col">
                     <!-- <label for="email" class="form-label">EMAIL</label> -->
-                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="emailexample@gmail.com">
                 </div>
                 <div class="col">
                     <!-- <label for="password" class="form-label">PASSWORD</label> -->

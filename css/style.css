@@ -169,9 +169,9 @@ body {
 {
     .social_icons a
     {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    display: inline;
+    /* flex-flow: row wrap;
+    align-items: center; */
     }
 }
 

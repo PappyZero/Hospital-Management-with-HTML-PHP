@@ -35,10 +35,10 @@
                         <table class='table table-bordered'>
                             <tr>
                                 <th>ID</th>
-                                <th>FIRST NAME</th>
                                 <th>LAST NAME</th>
-                                <th>USER NAME</th>
+                                <th>FIRST NAME</th>
                                 <th>EMAIL</th>
+                                <th>USER NAME</th>
                                 <th>CONTACT INFO</th>
                                 <th>GENDER</th>
                                 <th>COUNTRY</th>

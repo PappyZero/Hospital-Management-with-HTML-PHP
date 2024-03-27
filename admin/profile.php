@@ -75,46 +75,183 @@
                             </form>
                         </div>
                         <div class="col-md-6">
-                            <?php
-                                if (isset($_POST['ch_email_btn']))
-                                {
-                                    $email = $_POST['ch_email'];
-
-                                    if (empty($email))
-                                    {
-
-                                    }
-                                    
-                                    else
-                                    {
-                                        $query = "UPDATE admin SET email='$email' WHERE email='$ad'";
-
-                                        $res = mysqli_query($conn, $query);
-
-                                        if ($res)
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <?php
+                                        if (isset($_POST['ch_last_name_btn']))
                                         {
-                                            $_SESSION['admin'] = $email;
-                                            echo "<script> alert('ADMIN Email Change Successful!'); window.location='profile.php'</script>";
-                                        }
-                                        else
-                                        {
-                                            echo "<script> alert('ADMIN Email Change Failed!'); window.location='profile.php'</script>";
-                                        }
-                                    }
-                                }
+                                            $last_name = $_POST['ch_last_name'];
 
-                            ?>
-                            <form method="POST">
-                                <h3 class="text-center">CHANGE EMAIL</h3>
-                                <div class="form-group">
-                                    <label for="ch_email">EMAIL</label>
-                                    <input type="email" name="ch_email" class="form-control" autocomplete="off">
+                                            if (empty($last_name))
+                                            {
+
+                                            }
+                                            
+                                            else
+                                            {
+                                                $query = "UPDATE admin SET last_name='$last_name' WHERE email='$ad'";
+
+                                                $res = mysqli_query($conn, $query);
+
+                                                if ($res)
+                                                {
+                                                    $_SESSION['admin'] = $email;
+                                                    echo "<script> alert('ADMIN Last Name Change Successful!'); window.location='profile.php'</script>";
+                                                }
+                                                else
+                                                {
+                                                    echo "<script> alert('ADMIN Last Name Change Failed!'); window.location='profile.php'</script>";
+                                                }
+                                            }
+                                        }
+
+                                    ?>
+                                    <form method="POST">
+                                        <h3 class="text-start">CHANGE LAST NAME</h3>
+                                        <div class="form-group">
+                                            <label for="ch_last_name">LAST NAME</label>
+                                            <input type="text" name="ch_last_name" class="form-control" autocomplete="off">
+                                        </div>
+
+                                        <input type="submit" name="ch_last_name_btn" class="btn btn-outline-success" value="UPDATE LAST NAME">
+                                    </form>
+
                                 </div>
 
-                                <input type="submit" name="ch_email_btn" class="btn btn-outline-success" value="UPDATE EMAIL">
-                            </form>
+                                <div class="col-md-6">
+                                    <?php
+                                        if (isset($_POST['ch_first_name_btn']))
+                                        {
+                                            $first_name = $_POST['ch_first_name'];
+
+                                            if (empty($first_name))
+                                            {
+
+                                            }
+                                            
+                                            else
+                                            {
+                                                $query = "UPDATE admin SET first_name='$first_name' WHERE email='$ad'";
+
+                                                $res = mysqli_query($conn, $query);
+
+                                                if ($res)
+                                                {
+                                                    $_SESSION['admin'] = $email;
+                                                    echo "<script> alert('ADMIN First Name Change Successful!'); window.location='profile.php'</script>";
+                                                }
+                                                else
+                                                {
+                                                    echo "<script> alert('ADMIN First Name Change Failed!'); window.location='profile.php'</script>";
+                                                }
+                                            }
+                                        }
+
+                                    ?>
+                                    <form method="POST">
+                                        <h3 class="text-end">CHANGE FIRST NAME</h3>
+                                        <div class="form-group">
+                                            <label for="ch_first_name">FIRST NAME</label>
+                                            <input type="text" name="ch_first_name" class="form-control" autocomplete="off">
+                                        </div>
+
+                                        <input type="submit" name="ch_first_name_btn" class="btn btn-outline-success" value="UPDATE FIRST NAME">
+                                    </form>
+
+                                </div>
+                            </div>
 
                             <br>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <?php
+                                    if (isset($_POST['ch_email_btn']))
+                                    {
+                                        $email = $_POST['ch_email'];
+
+                                        if (empty($email))
+                                        {
+
+                                        }
+                                        
+                                        else
+                                        {
+                                            $query = "UPDATE admin SET email='$email' WHERE email='$ad'";
+
+                                            $res = mysqli_query($conn, $query);
+
+                                            if ($res)
+                                            {
+                                                $_SESSION['admin'] = $email;
+                                                echo "<script> alert('ADMIN Email Change Successful!'); window.location='profile.php'</script>";
+                                            }
+                                            else
+                                            {
+                                                echo "<script> alert('ADMIN Email Change Failed!'); window.location='profile.php'</script>";
+                                            }
+                                        }
+                                    }
+
+                                    ?>
+                                    <form method="POST">
+                                        <h3 class="text-center">CHANGE EMAIL</h3>
+                                        <div class="form-group">
+                                            <label for="ch_email">EMAIL</label>
+                                            <input type="email" name="ch_email" class="form-control" autocomplete="off">
+                                        </div>
+
+                                        <input type="submit" name="ch_email_btn" class="btn btn-outline-success" value="UPDATE EMAIL">
+                                    </form>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <?php
+                                        if (isset($_POST['ch_username_btn']))
+                                        {
+                                            $username = $_POST['ch_username'];
+
+                                            if (empty($username))
+                                            {
+
+                                            }
+                                            
+                                            else
+                                            {
+                                                $query = "UPDATE admin SET username='$username' WHERE email='$ad'";
+
+                                                $res = mysqli_query($conn, $query);
+
+                                                if ($res)
+                                                {
+                                                    $_SESSION['admin'] = $email;
+                                                    echo "<script> alert('ADMIN User Name Change Successful!'); window.location='profile.php'</script>";
+                                                }
+                                                else
+                                                {
+                                                    echo "<script> alert('ADMIN User Name Change Failed!'); window.location='profile.php'</script>";
+                                                }
+                                            }
+                                        }
+                                    ?>
+
+                                    <form method="POST">
+                                        <h3 class="text-center">CHANGE USER NAME</h3>
+                                        <div class="form-group">
+                                            <label for="ch_username">USER NAME</label>
+                                            <input type="text" name="ch_username" class="form-control" autocomplete="off">
+                                        </div>
+
+                                        <input type="submit" name="ch_username_btn" class="btn btn-outline-success" value="UPDATE USER NAME">
+                                    </form>
+                                </div>
+                            </div>
+               
+                            
+
+                            
+                            <br>
+                            
 
                             <?php
                                 if(isset($_POST['ch_pass_btn']))

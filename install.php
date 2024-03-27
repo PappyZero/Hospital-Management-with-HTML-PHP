@@ -26,7 +26,7 @@ $conn->select_db($database_name);
 
 // SQL query to create admin table
 $admin_sql = "CREATE TABLE IF NOT EXISTS admin (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    admin_id INT AUTO_INCREMENT PRIMARY KEY,
     last_name VARCHAR(250),
     first_name VARCHAR(250),
     email VARCHAR(250),
@@ -53,6 +53,7 @@ $doctor_sql = "CREATE TABLE IF NOT EXISTS doctors (
     email VARCHAR(250),
     username VARCHAR(100),
     password VARCHAR(250),
+    contact_info VARCHAR(250),
     specialization VARCHAR(250),
     profile VARCHAR(100),
     status TINYINT(1) DEFAULT 1,
